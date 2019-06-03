@@ -1,13 +1,29 @@
-<h1>당신이 입력한 텍스트는 {{total}} 로 구성되어 있습니다.</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wordcount 결과</title>
+        <meta charset="UTF-8">
+        <style>
+            mark {
+                font-weight:bold;
+                color:white;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>당신이 <mark>입력한 텍스트</mark>는 {{total}} 로 구성되어 있습니다.</h2>
 
-<a href="{% url 'home' %}"> 다시 하기 </a>
-<br>
-<h2> 입력한 텍스트: </h2>
-{{fulltext}}
+        <a href="{% url 'home' %}"> 다시 하기 </a>
+        <br>
+        <h3> <mark>입력한 텍스트</mark>: </h3>
+        {{fulltext}}
 
-<h2> 단어 카운트: </h2>
-{% for word, howmany in dictionary %}
+        <h3> <mark>단어 카운트</mark>: </h3>
+        {% for word, howmany in dictionary %}
 
-{{word}} : {{howmany}}
-<br>
-{% endfor %}
+        {{word}} : {{howmany}}
+        <br>
+        {% endfor %}
+    </body>
+</html>

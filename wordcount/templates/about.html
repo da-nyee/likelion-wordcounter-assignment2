@@ -1,5 +1,24 @@
-<h1>About</h1>
-
-<p>안녕하세요, 이곳은 글자를 세주는 멋쟁이 사자처럼의 wordcount 웹페이지입니다. 여기에서 글자를 세세요.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wordcount 소개</title>
+        <meta charset="UTF-8">
+        <style>
+            mark {
+                font-weight:bold;
+                color:white;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About</h1>
+        <p>
+            안녕하세요,<br>
+            이곳은 <mark>글자</mark>를 세주는 멋쟁이 사자처럼의 <mark>wordcount 웹페이지</mark>입니다.<br>
+            여기에서 글자를 세세요.
+        </p>
+    </body>
+</html>
 
 <a href="{% url 'home' %}">Home으로 돌아가기</a>
