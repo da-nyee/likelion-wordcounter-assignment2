@@ -1,4 +1,4 @@
-## Wordcounter Project (LIKELION)
+## Wordcounter Project (LIKE LION)
 ### The Outline
 * Developed a wordcounter by taking a Django class.
 
