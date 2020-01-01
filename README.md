@@ -1,7 +1,5 @@
 ## Wordcounter Project (LIKE LION)
-### The Outline
+### Outline
 * Developed a wordcounter by taking a Django class.
-
 * Added a new function; a highlighter.
-
 * Deployed the wordcounter to Github.
